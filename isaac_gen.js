@@ -119,7 +119,7 @@ function update()
             bossl = endrooms.pop();
             var cellImage = img(this, bossl, 'boss');
             cellImage.x += 1;
-            
+
             var rewardl = poprandomendroom();
             var cellImage = img(this, rewardl, 'reward');
 
