@@ -83,6 +83,8 @@ function picksecretroom()
         if(ncount(i) >= 3)
             return i;
 
+        // this does nothing because ncount is a function
+        // what was the intention?
         if(e > 300 && ncount >= 2)
             return i;
 
@@ -109,12 +111,10 @@ function update()
             }
         }
         else if(!placedSpecial) {
-
             if(floorplanCount < minrooms) {
                 start.apply(this);
                 return;
             }
-
             placedSpecial = true;
             bossl = endrooms.pop();
             var cellImage = img(this, bossl, 'boss');
